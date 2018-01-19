@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "cffbd6e6e0f4587a2450"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "0f739e60fa9bd855baed"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -731,8 +731,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["default"] = increment;
+/* harmony export (immutable) */ __webpack_exports__["a"] = increment;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__storage__ = __webpack_require__("./source/storage.js");
 
 
@@ -758,38 +757,29 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 function component() {
-    const button = document.createElement('button'),
-          div = document.createElement('div'),
-          h1 = document.createElement('h1');
+          const button = document.createElement('button'),
+                div = document.createElement('div'),
+                h1 = document.createElement('h1');
 
-    h1.innerHTML = __WEBPACK_IMPORTED_MODULE_1__storage__["a" /* default */].clicks;
-    h1.id = 'count';
-    button.innerHTML = 'Click';
+          h1.innerHTML = __WEBPACK_IMPORTED_MODULE_1__storage__["a" /* default */].clicks;
+          h1.id = 'count';
+          button.innerHTML = 'Click';
 
-    div.appendChild(button);
-    button.onclick = __WEBPACK_IMPORTED_MODULE_2__app_js__["default"];
-    div.appendChild(h1);
+          div.appendChild(button);
+          button.onclick = __WEBPACK_IMPORTED_MODULE_2__app_js__["a" /* default */];
+          div.appendChild(h1);
 
-    return div;
+          return div;
 };
 
 let comp = component();
 document.body.appendChild(comp);
 
-console.log('c');
 if (true) {
-    module.hot.accept("./source/app.js", function(__WEBPACK_OUTDATED_DEPENDENCIES__) { /* harmony import */ __WEBPACK_IMPORTED_MODULE_2__app_js__ = __webpack_require__("./source/app.js"); (() => {
-        try {
-            Object(__WEBPACK_IMPORTED_MODULE_2__app_js__["default"])();
-            console.log('updating app.js');
-            document.body.removeChild(comp);
-            comp = component();
-            console.log(comp, __WEBPACK_IMPORTED_MODULE_2__app_js__["default"]);
-            document.body.appendChild(comp);
-        } catch (err) {
-            console.error(err);
-        }
-    })(__WEBPACK_OUTDATED_DEPENDENCIES__); });
+          module.hot.accept();
+          document.body.innerHTML = '';
+          comp = component();
+          document.body.appendChild(comp);;
 }
 
 /***/ }),

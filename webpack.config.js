@@ -49,16 +49,16 @@ module.exports = {
             template: './index.html'
         }),
 
-        new WatchLiveReloadPlugin({
-            files: [
-                // Replace these globs with yours 
-                './source/'
-            ]
-        }),
+        // new WatchLiveReloadPlugin({
+        //     files: [
+        //         // Replace these globs with yours 
+        //         './source/'
+        //     ]
+        // }),
         
        
           
-        extractLess,
+        //extractLess,
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()
     ]

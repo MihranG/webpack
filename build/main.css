@@ -7,3 +7,9 @@ body h1 {
 body div {
   border: 2px solid gray;
 }
+body div {
+  border: 2px solid gray;
+}
+body div div div {
+  border: 2px solid red;
+}
